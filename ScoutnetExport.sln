@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScoutnetExport", "ScoutnetExport\ScoutnetExport.csproj", "{BE5C2CAE-19C1-423E-900D-B9515F9EB7B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE5C2CAE-19C1-423E-900D-B9515F9EB7B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE5C2CAE-19C1-423E-900D-B9515F9EB7B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE5C2CAE-19C1-423E-900D-B9515F9EB7B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE5C2CAE-19C1-423E-900D-B9515F9EB7B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59957B1D-5E98-4AEE-B421-EC0C84B589D1}
+	EndGlobalSection
+EndGlobal

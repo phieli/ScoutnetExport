@@ -1,0 +1,26 @@
+﻿<div class="text-center">
+    <h1 class="display-4">Scoutnet Export</h1>
+
+    <ul>
+        <li>Gå till Rapportcenter på Scoutnet Admin.</li>
+        <li>Välj fliken Arrangemang.</li>
+        <li>Välj alternativet Närvaro.</li>
+        <li>Välj önskad avdelning och tidperiod och tryck på Skicka in.</li>
+        <li>Tryck på knappen Ladda ner och välj Ladda ner lista i Excel-format.</li>
+    </ul>
+
+    <p><b>OBS! Ifall du har en fil per avdelning så behöver du lägga samtliga ark i en fil med varje avdelning som ett eget blad med avdelningens namn.</b></p>
+
+    <p><b>Formatet på filen du laddar upp måste bibehållas som XLS.</b></p>
+
+    <p><b>Vi sparar ingen data på vår server.</b></p>
+
+    <p><b style="color: #ff0000">Scoutnet exporterar inte fullständiga personnummer så dessa behöver uppdateras manuellt. All data som är sammansatt bör gås igenom manuellt efteråt.</b></p>
+
+    <form enctype="multipart/form-data" method="post" asp-action="Upload">
+        <input type="file" name="file" accept="application/vnd.ms-excel, application/xls" />
+        <input type="submit" value="Ladda upp" />
+    </form>
+
+
+</div>
