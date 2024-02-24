@@ -1,4 +1,5 @@
-﻿using NPOI.HSSF.UserModel;
+﻿using MathNet.Numerics.Statistics;
+using NPOI.HSSF.UserModel;
 using NPOI.SS.UserModel;
 using ScoutnetExport.Models;
 
@@ -36,9 +37,15 @@ namespace ScoutnetExport.Helpers
                     {
                         var participantsList = new List<Participant>();
 
-                        while (currentRowNum < inputBook.LastRowNum)
+                        while (true)
                         {
                             var currentRow = inputBook.GetRow(currentRowNum);
+
+                            if (currentRow == null || string.IsNullOrEmpty(currentRow.Cells[2].StringCellValue))
+                            {
+                                break;
+                            }
+
                             Int32.TryParse(currentRow.Cells[4].NumericCellValue.ToString(), out int zipcode);
 
                             if (DateOnly.TryParse(currentRow.Cells[5].StringCellValue, out DateOnly birthDate))

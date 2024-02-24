@@ -131,6 +131,11 @@ namespace ScoutnetExport.Helpers
 
             foreach (var child in children)
             {
+                if (currentRow == 38)
+                {
+                    currentRow = 71;
+                }
+                
                 worksheet.Cells[currentRow, 2].Value = child.Id;
                 worksheet.Cells[currentRow, 3].Value = child.Name;
 
